@@ -3,7 +3,7 @@ package person;
 import java.util.Objects;
 
 public class Actor extends Person {
-    private final int height; //хотя операции по изменению роста тоже делают
+    protected final int height; //хотя операции по изменению роста тоже делают
 
 
     public Actor(String name, String surname, Gender gender, int height) {
