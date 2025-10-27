@@ -1,3 +1,5 @@
+package person;
+
 import java.util.Objects;
 
 public class Actor extends Person {
@@ -11,8 +13,8 @@ public class Actor extends Person {
 
     @Override
     public String toString() {
-        return getName() +
-                " " + getSurname() +
+        return name +
+                " " + surname +
                 " (рост " + height + " см.)";
     }
 
@@ -21,13 +23,13 @@ public class Actor extends Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Actor actor = (Actor) o;
-        return Objects.equals(getName(), actor.getName()) &&
-                Objects.equals(getSurname(), actor.getSurname()) &&
+        return Objects.equals(name, actor.name) &&
+                Objects.equals(surname, actor.surname) &&
                 Objects.equals(height, actor.height);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getSurname(), height);
+        return Objects.hash(name, surname, height);
     }
 }

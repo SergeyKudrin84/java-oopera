@@ -1,3 +1,5 @@
+package person;
+
 public class Director extends Person {
 
     private int numberOfShows;
@@ -18,6 +20,6 @@ public class Director extends Person {
 
     @Override
     public String toString() {
-        return getName() + " " + getSurname();
+        return name + " " + surname;
     }
 }

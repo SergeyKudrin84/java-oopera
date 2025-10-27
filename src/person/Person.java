@@ -1,8 +1,10 @@
+package person;
+
 public class Person {
-    private String name;
-    private String surname;
+    protected String name;
+    protected String surname;
     //поля выше не сделал final, т.к. в современном мире возможно сменить
-    private final Gender gender;//в России запрещено)
+    protected final Gender gender;//в России запрещено)
 
     public Person(String name, String surname, Gender gender) {
         this.gender = gender;

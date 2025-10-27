@@ -1,10 +1,14 @@
+package show;
+
 import java.util.ArrayList;
+import person.Director;
+import person.Actor;
 
 public class Show {
-    private final String title;
-    private final Director director; //другой режиcсер - другое шоу
-    private int duration; //длительность в минутах теоретически со временем может измениться, не стал делать final
-    private ArrayList<Actor> listOfActors = new ArrayList<>(); //актеры могут меняться
+    protected final String title;
+    protected final Director director; //другой режиcсер - другое шоу
+    protected int duration; //длительность в минутах теоретически со временем может измениться, не стал делать final
+    protected ArrayList<Actor> listOfActors = new ArrayList<>(); //актеры могут меняться
 
     public Show(String title, Director director, int duration) {
         this.title = title;
@@ -60,7 +64,7 @@ public class Show {
     public void replaceActor(String replacementActorSurname, Actor newActor){
 
         //Считаю такую реализации правильной, т.к. могут быть однофамильцы
-        /*public void replaceActor(Actor replacementActor, Actor newActor){
+        /*public void replaceActor(person.Actor replacementActor, person.Actor newActor){
         if (listOfActors.contains(newActor)){
             System.out.println("Действие отменено! Актер " + newActor + " уже участвует в этом представлении.");
         }else if (!listOfActors.contains(replacementActor)) {

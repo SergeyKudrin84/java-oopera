@@ -1,3 +1,11 @@
+import show.Ballet;
+import show.MusicalShow;
+import show.Opera;
+import person.Actor;
+import person.Director;
+import person.Gender;
+import person.Person;
+
 public class Theatre {
 
     public static void main(String[] args) {
@@ -37,13 +45,13 @@ public class Theatre {
         System.out.println();
 
         //4. Для каждого спектакля выведите на экран список актёров.
-        System.out.println("Баллет \"Щелкунчик\"");
+        System.out.println("Баллет \"" +ballet.getTitle()+ "\"");
         ballet.printListOfActors();
         System.out.println();
-        System.out.println("Опера \"Тихий Дон\"");
+        System.out.println("Опера \"" +opera.getTitle()+ "\"");
         opera.printListOfActors();
         System.out.println();
-        System.out.println("Шоу \"Без названия\"");
+        System.out.println("Шоу \"" +musicalShow.getTitle()+ "\"");
         musicalShow.printListOfActors();
         System.out.println();
 
@@ -59,38 +67,38 @@ public class Theatre {
 
 //        Тестировал в процессе разработки
 //        /*//System.out.println(director);
-//        ArrayList<Actor> actorArrayList = new ArrayList<>();
-//        actorArrayList.add(new Actor("Иванов", "Иван", Gender.MALE, 185));
-//        actorArrayList.add(new Actor("Скворцова", "Мария", Gender.FEMALE, 165));
-//        actorArrayList.add(new Actor("Сидоров", "Иван", Gender.MALE, 178));
-//        Person musicalAutor = new Person( "Людвиг", "Бетховен", Gender.MALE);
+//        ArrayList<person.Actor> actorArrayList = new ArrayList<>();
+//        actorArrayList.add(new person.Actor("Иванов", "Иван", person.Gender.MALE, 185));
+//        actorArrayList.add(new person.Actor("Скворцова", "Мария", person.Gender.FEMALE, 165));
+//        actorArrayList.add(new person.Actor("Сидоров", "Иван", person.Gender.MALE, 178));
+//        person.Person musicalAutor = new person.Person( "Людвиг", "Бетховен", person.Gender.MALE);
 //        String librettoText = "какой-то текст";
-//        Ballet ballet = new Ballet("ballet1", directorOfOpera, 300, actorArrayList, musicalAutor, librettoText,
+//        Show.Ballet ballet = new Show.Ballet("ballet1", directorOfOpera, 300, actorArrayList, musicalAutor, librettoText,
 //                musicalAutor);
 //        ballet.printDirector();
 //        ballet.printLibretto();
 //        ballet.printListOfActors();
 //
-//        ballet.addNewActor(new Actor("Скворцова", "Мария", Gender.FEMALE, 165));
-//        ballet.addNewActor(new Actor("Иванов", "Иван", Gender.MALE, 186));
+//        ballet.addNewActor(new person.Actor("Скворцова", "Мария", person.Gender.FEMALE, 165));
+//        ballet.addNewActor(new person.Actor("Иванов", "Иван", person.Gender.MALE, 186));
 //        ballet.printListOfActors();
 //        System.out.println();
 //
 //        *//*//*/проверка на не участвует
-//        ballet.replaceActor(new Actor("Иванов", "Иван", Gender.MALE, 187),
-//                new Actor("Иванов", "Иван", Gender.MALE, 200));
+//        ballet.replaceActor(new person.Actor("Иванов", "Иван", person.Gender.MALE, 187),
+//                new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));
 //        //проверка на успешную замену
-//        ballet.replaceActor(new Actor("Иванов", "Иван", Gender.MALE, 186),
-//                new Actor("Иванов", "Иван", Gender.MALE, 200));
+//        ballet.replaceActor(new person.Actor("Иванов", "Иван", person.Gender.MALE, 186),
+//                new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));
 //        //проверка на уже участвует
-//        ballet.replaceActor(new Actor("Иванов", "Иван", Gender.MALE, 185),
-//                new Actor("Иванов", "Иван", Gender.MALE, 200));*//*
+//        ballet.replaceActor(new person.Actor("Иванов", "Иван", person.Gender.MALE, 185),
+//                new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));*//*
 //        //проверка на не участвует
-//        ballet.replaceActor("Журавлев", new Actor("Иванов", "Иван", Gender.MALE, 200));
+//        ballet.replaceActor("Журавлев", new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));
 //        //проверка на успешную замену
-//        ballet.replaceActor("Сидоров", new Actor("Иванов", "Иван", Gender.MALE, 200));
+//        ballet.replaceActor("Сидоров", new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));
 //        //проверка на уже участвует
-//        ballet.replaceActor("Иванов", new Actor("Иванов", "Иван", Gender.MALE, 200));
+//        ballet.replaceActor("Иванов", new person.Actor("Иванов", "Иван", person.Gender.MALE, 200));
 //        ballet.printListOfActors();*/
 
     }

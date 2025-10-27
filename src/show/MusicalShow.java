@@ -1,6 +1,9 @@
-import java.util.ArrayList;
+package show;
 
-public class MusicalShow extends Show{
+import person.Director;
+import person.Person;
+
+public class MusicalShow extends Show {
     private final Person musicAuthor; //другой композитор - другое шоу
     private String librettoText; //может меняться: опечатки, корректировки
 
