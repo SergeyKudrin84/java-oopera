@@ -6,7 +6,7 @@ import person.Actor;
 
 public class Show {
     protected final String title;
-    protected final Director director; //другой режиcсер - другое шоу
+    protected final Director director; //другой режиссер - другое шоу
     protected int duration; //длительность в минутах теоретически со временем может измениться, не стал делать final
     protected ArrayList<Actor> listOfActors = new ArrayList<>(); //актеры могут меняться
 
